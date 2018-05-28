@@ -1,0 +1,368 @@
+* {
+    transition: all 0.3s;
+}
+
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    color: #4d4d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.cont_for_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.menu_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs_sodergumoe img {
+    max-height: 500px;
+    width: 100%;
+}
+
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
+
+header {
+    align-self: stretch;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666767;
+    position: relative;
+}
+
+.img_class {
+    width: 80px;
+}
+
+.plus_border {
+    border: 1px solid #80808087;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tabs_cont {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #818181;
+}
+
+.tabs_zakladki {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new_tab {
+    border-bottom: 2px solid #80808087;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+
+.active_tab {
+    border-bottom-width: 4px;
+}
+
+.new_tab:hover {
+    cursor: pointer;
+}
+
+.tabs_sodergumoe {
+    position: relative;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 55px;
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.play::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 30px solid white;
+    border-bottom: 20px solid transparent;
+}
+
+.play:hover {
+    box-shadow: 0px 0px 20px black;
+}
+
+.cont_chapter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapter_word2 {
+    margin-left: 5px;
+}
+
+.line1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #4D4D4D;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.line2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #818181;
+    max-width: 580px;
+    min-width: 320px;
+    text-align: center;
+}
+
+.img_dude {
+    display: inline-block;
+    height: 100px;
+    align-self: center;
+}
+
+video {
+    width: 655px;
+}
+
+#zzz {
+    display: none;
+    color: #949595;
+}
+
+#label {
+    display: none;
+}
+
+header i {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#checkbox {
+    display: none;
+}
+
+input[type=checkbox]:checked~#menu_list {
+    display: block;
+}
+
+/* *************** MEDIA ****************************** */
+
+/* **************************************************** */
+
+@media all and (max-width:1024px) {
+    * {
+        transition: all 0.3s;
+    }
+    #label {
+        display: block;
+    }
+    #zzz {
+        font-size: 2.5rem;
+        display: block;
+    }
+    li,
+    a,
+    ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        color: aliceblue;
+        background-color: #61C0E0;
+        font-size: 1.2rem;
+    }
+    header {
+        margin-bottom: 15px;
+    }
+    .plus_border {
+        border: none;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    li {
+        display: block;
+        margin-top: 10px;
+    }
+    a:hover {
+        transition: all 0.3s;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    #zzz:hover {
+        transition: all 0.3s;
+        color: #61C0E0;
+    }
+    .menu_list {
+        display: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: absolute;
+        top: 80px;
+        border-radius: 10px;
+    }
+    .chapter_word1 {
+        order: 2;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    .chapter_word2 {
+        order: 1;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .cont_chapter {
+        flex-direction: column;
+    }
+    html,
+    body {
+        font-size: 14px;
+    }
+    .tabs_sodergumoe {
+        height: 400px;
+    }
+    .tabs_sodergumoe img {
+        height: 400px;
+        width: 712px;
+    }
+    .new_tab {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+    }
+}
+
+@media all and (max-width:767px) {
+    html,
+    body {
+        font-size: 14px;
+    }
+    .tabs_sodergumoe img {
+        height: 188px;
+        width: 330px;
+    }
+    .tabs_sodergumoe {
+        height: 300px;
+    }
+    .new_tab {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+    .play {
+        top: 100px;
+        width: 55px;
+        height: 55px;
+    }
+    .play::before {
+        top: 23%;
+        left: 35%;
+        border-top: 15px solid transparent;
+        border-left: 25px solid white;
+        border-bottom: 15px solid transparent;
+    }
+}
+
+@media all and (max-width:551px) {
+    #zzz {
+        font-size: 2rem;
+    }
+    .img_class {
+        width: 60px;
+    }
+    .img_dude {
+        height: 80px;
+    }
+    .line1 {
+        font-size: 2rem;
+    }
+    .line2 {
+        font-size: 0.8rem;
+        min-width: 300px;
+    }
+    header {
+        height: 50px;
+    }
+    .tabs_cont {
+        margin-top: 20px;
+    }
+    .tabs_sodergumoe {
+        margin-top: 20px;
+    }
+    .new_tab {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    .chapter_word1 {
+        font-size: 0.8rem;
+    }
+    .chapter_word2 {
+        font-size: 1rem;
+    }
+    .menu_list {
+        top: 60px;
+    }
+}
